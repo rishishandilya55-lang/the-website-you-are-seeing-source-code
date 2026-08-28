@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rishi — 12-Year-Old Developer & Creator from India</title>
+  <meta name="description" content="I'm Rishi, a 12-year-old developer from India who builds Minecraft mods, Discord bots, launchers, APIs, and websites — because building things is fun.">
+  <meta property="og:title" content="Rishi — Developer & Creator">
+  <meta property="og:description" content="12-year-old developer from India. Building things for fun.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0f1117">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Scroll Progress -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Cursor Glow -->
+  <div id="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav id="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">R<span class="logo-dot">.</span></a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#journey" class="nav-link">Journey</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#github" class="nav-link">GitHub</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-content">
+      <div class="hero-avatar-wrap animate-in">
+        <div id="hero-avatar" class="hero-avatar">
+          <span class="avatar-monogram">R</span>
+        </div>
+        <div class="avatar-ring"></div>
+      </div>
+      <h1 class="hero-heading animate-in delay-1">Hi, I'm <span class="text-accent">Rishi</span>.</h1>
+      <p class="hero-subtitle animate-in delay-2">12-year-old Developer & Creator from India</p>
+      <p class="hero-description animate-in delay-3">I build Minecraft projects, Discord bots, launchers, mods, APIs, websites, and random things I think are cool — mostly because I love creating.</p>
+      <div class="hero-buttons animate-in delay-4">
+        <a href="#projects" class="btn btn-primary" id="btn-view-projects">View Projects</a>
+        <a href="#github" class="btn btn-secondary" id="btn-github-hero">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          GitHub
+        </a>
+        <a href="https://discord.com" target="_blank" rel="noopener" class="btn btn-secondary" id="btn-discord-hero">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561 19.9312 19.9312 0 005.9932 3.0294.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057 13.1073 13.1073 0 01-1.872-.8923.0766.0766 0 01-.0076-.1268c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1268 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286 19.8975 19.8975 0 006.0023-3.0294.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286z"/></svg>
+          Discord
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-layout">
+        <div class="about-text">
+          <h2 class="section-label animate-on-scroll">About Me</h2>
+          <div class="about-body animate-on-scroll">
+            <p>I'm Rishi, a 12-year-old developer from India who builds things simply because I enjoy creating and experimenting with technology.</p>
+            <p>I started exploring development through Minecraft and gradually got into building mods, clients, launchers, Discord bots, APIs, websites, and backend systems.</p>
+            <p>I don't build because I have to — <strong>I build because it's fun.</strong></p>
+            <p>I'm constantly learning by starting projects, breaking things, fixing them, and figuring out how everything works. Some projects become serious, some get completely rebuilt, and some are just experiments — but every project teaches me something new.</p>
+          </div>
+          <p class="about-tagline animate-on-scroll">12 years old. From India. Building things for fun. 🚀</p>
+        </div>
+        <div class="about-code animate-on-scroll">
+          <div class="code-window">
+            <div class="code-dots"><span></span><span></span><span></span></div>
+            <pre><code><span class="code-keyword">const</span> <span class="code-var">rishi</span> = {
+  <span class="code-key">age</span>: <span class="code-num">12</span>,
+  <span class="code-key">from</span>: <span class="code-str">"India"</span>,
+  <span class="code-key">loves</span>: <span class="code-str">"building things"</span>,
+  <span class="code-key">started</span>: <span class="code-str">"Minecraft"</span>,
+  <span class="code-key">currently</span>: [
+    <span class="code-str">"mods"</span>, <span class="code-str">"bots"</span>,
+    <span class="code-str">"APIs"</span>, <span class="code-str">"launchers"</span>,
+    <span class="code-str">"websites"</span>
+  ],
+  <span class="code-key">motto</span>: <span class="code-str">"break it, fix it, ship it"</span>
+};</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-label animate-on-scroll">What I've Learned</h2>
+      <p class="section-intro animate-on-scroll">Technologies and areas I've explored, experimented with, and built things in.</p>
+      <div class="skills-grid animate-on-scroll">
+        <div class="skill-group">
+          <h3 class="skill-group-title">Languages</h3>
+          <div class="skill-items">
+            <span class="skill-pill">Java</span>
+            <span class="skill-pill">Go</span>
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">HTML/CSS</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Development</h3>
+          <div class="skill-items">
+            <span class="skill-pill">Minecraft Modding</span>
+            <span class="skill-pill">Plugin Development</span>
+            <span class="skill-pill">Discord Bots</span>
+            <span class="skill-pill">API Development</span>
+            <span class="skill-pill">Backend</span>
+            <span class="skill-pill">Web Development</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title">Infrastructure</h3>
+          <div class="skill-items">
+            <span class="skill-pill">Docker</span>
+            <span class="skill-pill">Linux</span>
+            <span class="skill-pill">VPS / Servers</span>
+            <span class="skill-pill">Git & GitHub</span>
+            <span class="skill-pill">Databases</span>
+            <span class="skill-pill">Deployment</span>
+            <span class="skill-pill">Working with APIs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Journey Timeline -->
+  <section id="journey" class="section">
+    <div class="container">
+      <h2 class="section-label animate-on-scroll">My Journey</h2>
+      <p class="section-intro animate-on-scroll">How I went from experimenting with Minecraft to building real software projects.</p>
+      <div class="timeline">
+        <div class="timeline-line" aria-hidden="true"><div class="timeline-line-fill"></div></div>
+
+        <div class="timeline-item animate-on-scroll" data-side="left">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <span class="timeline-tag">The Beginning</span>
+            <h3>Minecraft → Programming</h3>
+            <p>Started experimenting with Minecraft and became interested in how mods, clients, plugins, and launchers work under the hood.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item animate-on-scroll" data-side="right">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <span class="timeline-tag">First Code</span>
+            <h3>Mod Development</h3>
+            <p>Started learning Java and building Minecraft mods — HUD overlays, quality-of-life tweaks, and PvP features.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item animate-on-scroll" data-side="left">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <span class="timeline-tag">New Territory</span>
+            <h3>Discord Bots</h3>
+            <p>Started creating feature-rich Discord bots for server management, moderation, tickets, and automation.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item animate-on-scroll" data-side="right">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <span class="timeline-tag">Bigger Projects</span>
+            <h3>Launchers & Clients</h3>
+            <p>Experimented with Minecraft clients and launchers, including projects like Zeb and Velora.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item animate-on-scroll" data-side="left">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <span class="timeline-tag">Going Deeper</span>
+            <h3>Backend & APIs</h3>
+            <p>Started learning how APIs, databases, authentication, and backend services connect different applications together.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item animate-on-scroll" data-side="right">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <span class="timeline-tag">Infrastructure</span>
+            <h3>Docker & Linux</h3>
+            <p>Started deploying projects using Docker and managing applications on Linux VPS servers.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item animate-on-scroll" data-side="left">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <span class="timeline-tag">Right Now</span>
+            <h3>Today</h3>
+            <p>Still learning, still experimenting, and still building random things just because I can.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <h2 class="section-label animate-on-scroll">Projects</h2>
+      <p class="section-intro animate-on-scroll">Things I've built, broken, rebuilt, and shipped.</p>
+
+      <div class="project-filters animate-on-scroll" id="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="minecraft">Minecraft</button>
+        <button class="filter-btn" data-filter="bots">Bots</button>
+        <button class="filter-btn" data-filter="apis">APIs & Backend</button>
+        <button class="filter-btn" data-filter="infra">Infrastructure</button>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+
+        <!-- Zeb -->
+        <article class="project-card animate-on-scroll" data-category="minecraft">
+          <div class="project-header">
+            <h3 class="project-name">Zeb</h3>
+            <span class="project-status status-discontinued">Discontinued</span>
+          </div>
+          <p class="project-desc">Minecraft client and launcher project with API integration and custom tooling.</p>
+          <div class="project-tags">
+            <span>Java</span><span>Launcher</span><span>API</span><span>Minecraft</span>
+          </div>
+        </article>
+
+        <!-- Velora -->
+        <article class="project-card animate-on-scroll" data-category="minecraft">
+          <div class="project-header">
+            <h3 class="project-name">Velora</h3>
+            <span class="project-status status-wip">Project</span>
+          </div>
+          <p class="project-desc">Minecraft launcher and client with cosmetics, social features, and backend API integration.</p>
+          <div class="project-tags">
+            <span>Java</span><span>Launcher</span><span>Backend</span><span>Cosmetics</span>
+          </div>
+        </article>
+
+        <!-- Minecraft Mods -->
+        <article class="project-card animate-on-scroll" data-category="minecraft">
+          <div class="project-header">
+            <h3 class="project-name">Minecraft Mods</h3>
+            <span class="project-status status-active">Various</span>
+          </div>
+          <p class="project-desc">FPS HUD, Keystrokes HUD, Ping HUD, quality-of-life features, and PvP-related mods.</p>
+          <div class="project-tags">
+            <span>Java</span><span>Forge</span><span>HUD</span><span>PvP</span>
+          </div>
+        </article>
+
+        <!-- Discord Bots -->
+        <article class="project-card animate-on-scroll" data-category="bots">
+          <div class="project-header">
+            <h3 class="project-name">Discord Bots</h3>
+            <span class="project-status status-active">Multiple</span>
+          </div>
+          <p class="project-desc">Feature-rich bots for moderation, role management, ticket systems, applications, and server automation.</p>
+          <div class="project-tags">
+            <span>JavaScript</span><span>Discord.js</span><span>Automation</span>
+          </div>
+        </article>
+
+        <!-- MC-Discord Integration -->
+        <article class="project-card animate-on-scroll" data-category="bots">
+          <div class="project-header">
+            <h3 class="project-name">MC-Discord Bridge</h3>
+            <span class="project-status status-wip">Experiment</span>
+          </div>
+          <p class="project-desc">Integrations connecting Minecraft servers with Discord for cross-platform communication and management.</p>
+          <div class="project-tags">
+            <span>Java</span><span>JavaScript</span><span>API</span><span>Webhooks</span>
+          </div>
+        </article>
+
+        <!-- APIs & Backend -->
+        <article class="project-card animate-on-scroll" data-category="apis">
+          <div class="project-header">
+            <h3 class="project-name">REST APIs</h3>
+            <span class="project-status status-active">Learning</span>
+          </div>
+          <p class="project-desc">Building and experimenting with REST APIs, databases, authentication, and connecting applications together.</p>
+          <div class="project-tags">
+            <span>Go</span><span>Python</span><span>REST</span><span>Databases</span>
+          </div>
+        </article>
+
+        <!-- Server Infrastructure -->
+        <article class="project-card animate-on-scroll" data-category="infra">
+          <div class="project-header">
+            <h3 class="project-name">Server Infrastructure</h3>
+            <span class="project-status status-active">Ongoing</span>
+          </div>
+          <p class="project-desc">Deploying and managing applications with Docker, Linux VPS servers, GitHub CI/CD, and containerized services.</p>
+          <div class="project-tags">
+            <span>Docker</span><span>Linux</span><span>VPS</span><span>GitHub</span>
+          </div>
+        </article>
+
+        <!-- Web Dev -->
+        <article class="project-card animate-on-scroll" data-category="apis">
+          <div class="project-header">
+            <h3 class="project-name">Web Projects</h3>
+            <span class="project-status status-active">Various</span>
+          </div>
+          <p class="project-desc">Websites, landing pages, and web applications built with HTML, CSS, JavaScript, and various frameworks.</p>
+          <div class="project-tags">
+            <span>HTML/CSS</span><span>JavaScript</span><span>Web</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GitHub Section -->
+  <section id="github" class="section">
+    <div class="container">
+      <h2 class="section-label animate-on-scroll">GitHub</h2>
+      <p class="section-intro animate-on-scroll">My public repositories and activity.</p>
+      <p class="section-note animate-on-scroll">Most of my larger projects are kept in private repositories to protect the source code. What you see here is just the public side.</p>
+      <div id="github-content" class="github-content animate-on-scroll">
+        <div class="github-loading">
+          <div class="loader"></div>
+          <p>Loading GitHub data...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Currently Building -->
+  <section id="currently" class="section section-alt">
+    <div class="container">
+      <h2 class="section-label animate-on-scroll">Currently</h2>
+      <div class="currently-grid animate-on-scroll">
+        <div class="currently-card">
+          <div class="currently-icon">🔨</div>
+          <h3 class="currently-title">Building</h3>
+          <p class="currently-text" id="currently-building">Something new...</p>
+        </div>
+        <div class="currently-card">
+          <div class="currently-icon">🧠</div>
+          <h3 class="currently-title">Learning</h3>
+          <p class="currently-text" id="currently-learning">Something interesting...</p>
+        </div>
+        <div class="currently-card">
+          <div class="currently-icon">💡</div>
+          <h3 class="currently-title">Next Idea</h3>
+          <p class="currently-text" id="currently-next">Something completely random...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section id="techstack" class="section">
+    <div class="container">
+      <h2 class="section-label animate-on-scroll">Tech Stack</h2>
+      <div class="techstack-grid animate-on-scroll">
+        <div class="techstack-group">
+          <h3 class="techstack-group-title">Languages</h3>
+          <ul class="techstack-list">
+            <li>Java</li>
+            <li>Go</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>HTML / CSS</li>
+          </ul>
+        </div>
+        <div class="techstack-group">
+          <h3 class="techstack-group-title">Development</h3>
+          <ul class="techstack-list">
+            <li>Minecraft Modding</li>
+            <li>Minecraft Plugins</li>
+            <li>Discord Bots</li>
+            <li>APIs</li>
+            <li>Backend</li>
+            <li>Web Development</li>
+          </ul>
+        </div>
+        <div class="techstack-group">
+          <h3 class="techstack-group-title">Infrastructure</h3>
+          <ul class="techstack-list">
+            <li>Docker</li>
+            <li>Linux</li>
+            <li>VPS</li>
+            <li>GitHub</li>
+            <li>Databases</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <h2 class="section-label animate-on-scroll">Get in Touch</h2>
+      <div class="contact-layout animate-on-scroll">
+        <p class="contact-text">Want to talk, collaborate, or just say hi?</p>
+        <div class="contact-links">
+          <a href="#github" class="contact-link" id="contact-github-link">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            GitHub
+          </a>
+          <a href="https://discord.com" target="_blank" rel="noopener" class="contact-link" id="contact-discord-link">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561 19.9312 19.9312 0 005.9932 3.0294.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057 13.1073 13.1073 0 01-1.872-.8923.0766.0766 0 01-.0076-.1268c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1268 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286 19.8975 19.8975 0 006.0023-3.0294.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286z"/></svg>
+            gojo_satoru_reborn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Built by Rishi · 2026</p>
+      <p class="footer-source"><a href="https://github.com/rishishandilya55-lang/the-website-you-are-seeing-source-code" target="_blank" rel="noopener">Source code for this website</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
